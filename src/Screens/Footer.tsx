@@ -7,8 +7,8 @@ export default function Footer() {
                     <div className="flex flex-col text-start gap-1">
                         <h1 className="text-base font-Poppins">Siga a Team Geesh</h1>
                         <ul className="flex gap-2.5 text-sm underline text-coal/90 font-Poppins font-light">
-                            <li><a href="#" className="hover:text-black">Instagram</a></li>
-                            <li><a href="#">Youtube</a></li>
+                            <li><a href="#" className="hover:text-black transition-colors">Instagram</a></li>
+                            <li><a href="#" className="hover:text-black transition-colors">Youtube</a></li>
                         </ul>
                     </div>
                     <div className="flex flex-col text-start gap-1">
