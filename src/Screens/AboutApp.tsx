@@ -21,7 +21,7 @@ export default function AboutApp() {
                 </div>
                 <div className="w-full flex flex-col items-start gap-1.5 pt-1.5 pb-2.5">
                     <h1 className="text-2xl font-bold font-Inter">Principais vantagens</h1>
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-6 py-2.5">
                         <BenefitBase icon={<Timer width={32} height={32} />} title="Monitoramento em Tempo Real" description="Veja quanto entra e sai de energia, em tempo real, com gráficos simples e dados atualizados a todo momento." model="on description" />
                         <BenefitBase icon={<User width={32} height={32} />} title="Acessibilidade Garantida" description="Interface simples, intuitiva e inclusiva. Qualquer pessoa consegue usar com facilidade." model="on description" />
                         <BenefitBase icon={<Battery width={32} height={32} />} title="Bateria Inteligente" description="Gerencie o uso da bateria nos momentos certos e garanta energia mesmo quando o clima não ajuda." model="on description" />

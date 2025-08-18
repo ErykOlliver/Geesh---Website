@@ -2,6 +2,7 @@ import './App.css'
 import AboutApp from './Screens/AboutApp'
 
 import DownloadApp from "./Screens/DownloadApp"
+import TeamGeesh from './Screens/TeamGeesh'
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <div className='py-5 text-5xl font-bold uppercase text-White-80'>
         <h1>Mais que um aplicativo. uma ideia em movimento.</h1>
       </div>
-      
+      <TeamGeesh />
     </div>
   )
 }
