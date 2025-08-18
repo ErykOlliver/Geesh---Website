@@ -2,6 +2,7 @@ import './App.css'
 import AboutApp from './Screens/AboutApp'
 
 import DownloadApp from "./Screens/DownloadApp"
+import Footer from './Screens/Footer'
 import TeamGeesh from './Screens/TeamGeesh'
 
 
@@ -14,6 +15,7 @@ function App() {
         <h1>Mais que um aplicativo. uma ideia em movimento.</h1>
       </div>
       <TeamGeesh />
+      <Footer />
     </div>
   )
 }
