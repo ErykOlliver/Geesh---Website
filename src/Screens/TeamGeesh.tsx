@@ -5,12 +5,12 @@ export default function TeamGeesh() {
         <div className="w-screen flex bg-White-80 items-center justify-center">
             <div className="w-[90%] flex flex-col gap-6 pt-2.5">
                 <h1 className="text-3xl sm:text-4xl text-start font-bold font-Inter uppercase">Equipe de desenvolvimento</h1>
-                <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-5 pt-1.5 pb-2.5">
-                    <MemberBase name="Erick Oliveira" skills='Lider, Programador & Design UI/UX' img="/Geesh---Website/Erick.jpg" />
-                    <MemberBase name="Gustavo Almeida" skills='Social Media & Tester' img="/Geesh---Website/Gustavo.jpg" />
+                <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-5 pt-1.5 pb-2.5">
+                    <MemberBase name="Erick Oliveira" skills='Lider, Programador & Design UI/UX' img="/GeeshWebsite/Erick.jpg" />
+                    <MemberBase name="Gustavo Almeida" skills='Social Media & Tester' img="/GeeshWebsite/Gustavo.jpg" />
                     <MemberBase name="Matheus Gabriel" skills='Programador' />
-                    <MemberBase name="Micael Pereira" skills='Tester' img="/Geesh---Website/Micael.jpg" />
-                    <MemberBase name="Guilherme Araujo" skills='Tester' img="/Geesh---Website/Guilherme.jpg" />
+                    <MemberBase name="Micael Pereira" skills='Tester' img="/GeeshWebsite/Micael.jpg" />
+                    <MemberBase name="Guilherme Araujo" skills='Tester' img="/GeeshWebsite/Guilherme.jpg" />
                 </div>
                 <div className="w-full flex items-start gap-1.5 pt-1.5 pb-2.5">
                     <div className="w-full h-fit flex gap-2.5">
