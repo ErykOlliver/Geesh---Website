@@ -4,16 +4,22 @@ import './index.css'
 import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import AdminSignIn from './Screens/Admin/AdminSignIn.tsx'
+import PageNotFound from './Screens/others/page-not-found.tsx'
 
 const router = createBrowserRouter([
   {
     path: '/GeeshWebsite/',
-    element: <App />
+    element: <App />,
   },
   {
     path: '/GeeshWebsite/AdminSignIn/',
     element: <AdminSignIn />
-  }
+  },
+  {
+    path: '*',
+    element: <PageNotFound />
+  },
+
 ])
 
 createRoot(document.getElementById('root')!).render(
