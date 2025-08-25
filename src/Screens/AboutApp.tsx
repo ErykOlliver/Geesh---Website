@@ -1,5 +1,5 @@
-import { Battery, Camera, ChartArea, ChartBar, MoreHorizontal, MoreVertical, Timer, User } from "lucide-react";
-import BenefitBase from "../components/BenefitBase";
+import { Battery, Timer, User } from "lucide-react";
+import BenefitBase from "../components/BenefitBase.tsx";
 
 export default function AboutApp() {
     return (
@@ -10,7 +10,7 @@ export default function AboutApp() {
                     <div className="flex flex-col gap-2.5">
                         <p className="text-justify text-coal/90 font-Poppins text-sm sm:text-lg">
                             O Geesh é uma aplicação desenvolvida por alunos do 3º ano do curso
-                            técnico em Mecatrônica do <a title="Centro Territorial de Educação Profissional da Região Metropolitana" target="_blank" href="https://search.brave.com/search?q=cetep+rm+cama%C3%A7ari&summary=1&conversation=76f5246ab90ff245520bf7" className="hover:text-black transition-colors underline">CETEP RM</a>, com o objetivo de gerenciar de forma
+                            técnico em Mecatrônica do <a title="Centro Territorial de Educação Profissional da Região Metropolitana" target="_blank" href="https://share.google/JH9wYu5LDPvkThc5R" className="hover:text-black transition-colors underline">CETEP RM </a>, com o objetivo de gerenciar de forma
                             simples e eficiente a energia proveniente de fontes renováveis.
                             <br />
                             Seu funcionamento integra diferentes soluções, como energia solar e eólica,
