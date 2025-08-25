@@ -3,7 +3,7 @@ import { Download, UserCog } from 'lucide-react'
 export default function DownloadApp() {
     return (
         <div className='w-[90%] flex flex-col gap-5 items-center justify-center'>
-            <a className='flex absolute right-2 top-1.5 sm:right-3.5 sm:top-2.5 hover:bg-White-80 hover:text-azure transition-colors hover:cursor-pointer justify-center gap-1.5 font-Inria items-center border border-White-80 text-White-80 rounded-full px-2.5 py-1'>
+            <a href='#' className='flex absolute right-2 top-1.5 sm:right-3.5 sm:top-2.5 hover:bg-White-80 hover:text-azure transition-colors justify-center gap-1.5 font-Inria items-center border border-White-80 text-White-80 rounded-full px-2.5 py-1'>
                 <UserCog />
                 <p className='select-none'>Admin</p>
             </a>
