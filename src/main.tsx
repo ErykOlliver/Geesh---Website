@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import AdminPage from './Screens/Admin/AdminPage.tsx'
+import AdminSignIn from './Screens/Admin/AdminSignIn.tsx'
 
 const router = createBrowserRouter([
   {
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/GeeshWebsite/AdminSignIn/',
-    element: <AdminPage />
+    element: <AdminSignIn />
   }
 ])
 
