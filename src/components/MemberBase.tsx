@@ -11,7 +11,7 @@ type MemberProps = {
 export default function MemberBase(props: MemberProps) {
 
     return (
-        <div className="w-full flex items-center gap-2.5">
+        <li className="w-full flex items-center gap-2.5">
             <div className=" flex items-center justify-center w-20 h-16 sm:w-20 sm:h-16 rounded-full">
                 {props.img ?
                     <img src={props.img.toLocaleString()} alt="foto do usuário" className="w-full h-full rounded-full" />
@@ -22,6 +22,6 @@ export default function MemberBase(props: MemberProps) {
                 <h1 className="font-bold font-Inria">{props.name}</h1>
                 <p className="font-Inria font-light text-base">{props.skills}</p>
             </div>
-        </div >
+        </li >
     )
 }

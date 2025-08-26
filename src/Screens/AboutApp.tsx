@@ -7,22 +7,15 @@ export default function AboutApp() {
             <div className="w-[90%] flex flex-col gap-4 pt-2.5">
                 <div className="w-full flex flex-col items-start gap-1.5 pt-1.5 pb-2.5">
                     <h1 className="text-4xl sm:text-5xl font-bold font-Inter">Geesh</h1>
-                    <div className="flex flex-col gap-2.5">
-                        <p className="flex flex-col text-justify text-coal/90 font-Poppins  text-sm sm:text-lg">
-                            <span>
-                                O Geesh é uma aplicação desenvolvida por alunos do 3º ano do curso
-                                técnico em Mecatrônica do <a title="Centro Territorial de Educação Profissional da Região Metropolitana" target="_blank" href="https://share.google/JH9wYu5LDPvkThc5R" className="hover:text-black transition-colors underline">CETEP RM </a>,
-                                com o objetivo de gerenciar de forma
-                                simples e eficiente a energia proveniente de fontes renováveis.
-                            </span>
-                            <br />
-                            <span>
-                                Seu funcionamento integra diferentes soluções, como energia solar e eólica,
-                                conectadas a dispositivos inteligentes criados por outras equipes do mesmo
-                                projeto.
-                            </span>
-                        </p>
-                    </div>
+                    <p className=" text-justify text-coal/90 font-Poppins  text-sm sm:text-lg">
+                        O Geesh é uma aplicação desenvolvida por alunos do 3º ano do curso
+                        técnico em Mecatrônica do <a rel="noopener noreferrer" title="Centro Territorial de Educação Profissional da Região Metropolitana" target="_blank" href="https://share.google/JH9wYu5LDPvkThc5R" className="hover:text-black transition-colors underline">CETEP RM</a>,
+                        com o objetivo de gerenciar de forma
+                        simples e eficiente a energia proveniente de fontes renováveis.
+                        Seu funcionamento integra diferentes soluções, como energia solar e eólica,
+                        conectadas a dispositivos inteligentes criados por outras equipes do mesmo
+                        projeto.
+                    </p>
                 </div>
                 <div className="w-full flex flex-col items-start gap-1.5 pt-1.5 pb-2.5">
                     <h1 className="text-2xl sm:text-3xl font-bold font-Inter">Principais vantagens</h1>
