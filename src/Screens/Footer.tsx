@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="w-screen flex bg-White-80 items-center justify-center">
+        <footer className="w-screen flex bg-White-80 shadow-xl items-center justify-center">
             <div className="w-[90%] flex flex-col sm:flex-row py-5 gap-6 sm:justify-between sm:items-center">
                 <img src="/GeeshWebsite/GeeshIconFooter.svg" alt="Geesh Icon" width={25} />
                 <nav className="flex flex-col gap-5 sm:flex-row " aria-label="Redes sociais e contato">

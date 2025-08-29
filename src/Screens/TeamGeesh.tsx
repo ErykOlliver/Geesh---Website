@@ -2,7 +2,7 @@ import MemberBase from "../components/MemberBase";
 
 export default function TeamGeesh() {
     return (
-        <div className="w-screen flex bg-White-80 items-center justify-center">
+        <div className="w-screen flex bg-White-80 shadow-xl items-center justify-center">
             <div className="w-[90%] flex flex-col gap-6 pt-2.5">
                 <h1 className="text-3xl sm:text-4xl text-start font-bold font-Inter uppercase">Equipe de desenvolvimento</h1>
                 <ul className="w-full flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-5 pt-1.5 pb-2.5">

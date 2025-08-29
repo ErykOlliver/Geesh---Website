@@ -20,7 +20,7 @@ export default function BenefitBase(props: BenefitsProps) {
                         </div>
                         <div className="text-sm sm:text-lg text-start font-Inter">
                             <h1 className="font-bold">{props.title}</h1>
-                            <p>{props.description}</p>
+                            <p className="text-coal/90">{props.description}</p>
                         </div>
                     </div>
                 )

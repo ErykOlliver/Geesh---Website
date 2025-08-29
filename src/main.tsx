@@ -7,6 +7,8 @@ import AdminSignIn from './Screens/Admin/AdminSignIn.tsx'
 import PageNotFound from './Screens/others/page-not-found.tsx'
 import Admin from './Screens/Admin/Admin.tsx'
 import ProtectRouter from './Screens/Admin/components/ProtectRouter.tsx'
+import { Dashboard } from './Screens/Admin/views/Dashboard.tsx'
+import Accounts from './Screens/Admin/views/Accounts.tsx'
 
 const router = createBrowserRouter([
   {
@@ -23,7 +25,17 @@ const router = createBrowserRouter([
       <ProtectRouter>
         < Admin />
       </ProtectRouter>
-    )
+    ),
+    children: [
+      {
+        path: "Dashboard",
+        element: <Dashboard />
+      },
+      {
+        path: "Users",
+        element: <Accounts />
+      }
+    ]
   },
   {
     path: '*',

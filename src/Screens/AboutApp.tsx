@@ -3,7 +3,7 @@ import BenefitBase from "../components/BenefitBase.tsx";
 
 export default function AboutApp() {
     return (
-        <div className="w-screen flex bg-White-80 items-center justify-center">
+        <div className="w-screen flex bg-White-80 shadow-xl items-center justify-center">
             <div className="w-[90%] flex flex-col gap-4 pt-2.5">
                 <div className="w-full flex flex-col items-start gap-1.5 pt-1.5 pb-2.5">
                     <h1 className="text-4xl sm:text-5xl font-bold font-Inter">Geesh</h1>
