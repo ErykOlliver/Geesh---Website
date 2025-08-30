@@ -21,7 +21,7 @@ export default function TopBar() {
 
 
     return (
-        <div className="fixed left-96 right-0 h-fit hidden py-5 bg-phantom-night text-white border-b-2 border-graphite-shadow sm:flex items-center justify-center px-6 z-50">
+        <div className="fixed right-0 h-24 w-390 hidden py-5 bg-phantom-night text-white border-b-2 border-graphite-shadow sm:flex items-center justify-center px-6 z-50">
             <div className="w-[90%] h-full justify-between flex items-center">
                 <h1 className="text-4xl font-Poppins">Dashboard</h1>
                 <div className="flex items-end flex-col font-Poppins gap-1.5">

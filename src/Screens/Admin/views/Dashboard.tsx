@@ -5,7 +5,7 @@ import { Notifications } from "../components/Notifications"
 
 export const Dashboard = () => {
   return (
-    <div className="bg-black  text-white w-full h-full flex justify-center items-start">
+    <div className=" text-white w-full h-full flex justify-center items-start">
       <div className=" w-[90%] flex flex-col gap-3.5">
         <div className="w-full h-fit flex gap-2.5 flex-wrap justify-center">
           <GeneralUserStatistic icon={<Users />} title="Total de usuarios" value={200} />

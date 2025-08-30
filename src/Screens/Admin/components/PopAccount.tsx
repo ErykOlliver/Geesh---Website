@@ -24,7 +24,7 @@ export const PopAccount = (props: AccountProps) => {
                     <span className="font-Inter font-light text-sm text-White-80/70">{props.account_email}</span>
                 </div>
             </div>
-            <Link to={"#"} className="w-fit h-fit px-4 py-2 flex justify-center items-center bg-White-80 text-graphite-shadow rounded-full">
+            <Link to="#" className="w-fit h-fit px-4 py-2 flex hover:bg-abyssal-black shadow hover:shadow-none hover:text-White-80 transition-colors justify-center items-center bg-White-80 text-graphite-shadow rounded-full">
                 <span className="text-sm">Ver perfil</span>
             </Link>
         </div>

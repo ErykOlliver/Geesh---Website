@@ -5,12 +5,12 @@ import { Link } from "react-router-dom"
 export const SideBar = () => {
     return (
         <div className="flex w-full flex-col">
-            <aside className="fixed sm:w-96 bg-phantom-night border-r-2 border-graphite-shadow h-full max-h-screen hidden sm:flex">
+            <aside className="fixed sm:w-90 bg-phantom-night border-r-2 border-graphite-shadow h-full max-h-screen hidden sm:flex">
 
             </aside>
             {/* Mobile Menu */}
             <div className="fixed flex sm:hidden">
-                <header className="bg-phantom-night border-b-2 border-graphite-shadow w-screen items-center justify-center flex py-2.5">
+                <header className="bg-phantom-night border-b-2 border-graphite-shadow w-screen h-16 items-center justify-center flex py-2.5">
                     <div className="w-[90%] flex justify-between items-center">
                         <h1 className="text-white text-4xl font-Poppins">Inicio</h1>
                         <Sheet>
