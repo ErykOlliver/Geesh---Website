@@ -1,41 +1,66 @@
-import { Battery, Timer, User } from "lucide-react";
-import BenefitBase from "../components/BenefitBase.tsx";
-
 export default function AboutApp() {
     return (
-        <div className="w-screen flex bg-White-80 shadow-xl items-center justify-center">
-            <div className="w-[90%] flex flex-col gap-4 pt-2.5">
-                <div className="w-full flex flex-col items-start gap-1.5 pt-1.5 pb-2.5">
-                    <h1 className="text-4xl sm:text-5xl font-bold font-Inter">Geesh</h1>
-                    <p className=" text-justify text-coal/90 font-Poppins  text-sm sm:text-lg">
-                        O Geesh é uma aplicação desenvolvida por alunos do 3º ano do curso
-                        técnico em Mecatrônica do <a rel="noopener noreferrer" title="Centro Territorial de Educação Profissional da Região Metropolitana" target="_blank" href="https://share.google/JH9wYu5LDPvkThc5R" className="hover:text-black transition-colors underline">CETEP RM</a>,
-                        com o objetivo de gerenciar de forma
-                        simples e eficiente a energia proveniente de fontes renováveis.
-                        Seu funcionamento integra diferentes soluções, como energia solar e eólica,
-                        conectadas a dispositivos inteligentes criados por outras equipes do mesmo
-                        projeto.
+        <section id="aboutApp" className=" w-full flex flex-col gap-2.5 bg-White-80 items-start justify-start px-5 pt-14">
+            <div className="flex flex-col sm:hidden">
+                <header className="flex w-full text-start flex-col gap-2.5">
+                    <h1 className="text-4xl font-Poppins text-abyssal-tide font-medium">O que é o Geesh?</h1>
+                </header>
+                <article className=" text-justify flex flex-col gap-2.5 text-lg font-Poppins text-graphite-shadow/70">
+                    <p className="bg-white/40 p-2.5 rounded-md">O Geesh é um aplicativo desenvolvido por alunos do 3º ano de
+                        Mecatrônica do <a target="_blank" href="https://www.google.com/search?q=Centro+Territorial+de+Educa%C3%A7%C3%A3o+Profissional+da+Regi%C3%A3o+Metropolitana&sxsrf=AE3TifO9CVX7sT9E815UxVXPG7UQl5xqpw%3A1756703815836" className="underline font-medium">CETEP RM</a>, com a missão de tornar o gerenciamento
+                        de energia renovável simples, acessível e eficiente.</p>
+
+                    <p className="bg-white/40 p-2.5 rounded-md">
+                        Nosso sistema integra diferentes soluções, como energia solar e eólica,
+                        conectadas a dispositivos inteligentes para oferecer monitoramento em tempo real,
+                        uso otimizado e máxima confiabilidade.
                     </p>
-                </div>
-                <div className="w-full flex flex-col items-start gap-1.5 pt-1.5 pb-2.5">
-                    <h1 className="text-2xl sm:text-3xl font-bold font-Inter">Principais vantagens</h1>
-                    <div className="flex flex-col gap-6 py-2.5">
-                        <BenefitBase icon={<Timer width={32} height={32} />} title="Monitoramento em Tempo Real" description="Veja quanto entra e sai de energia, em tempo real, com gráficos simples e dados atualizados a todo momento." model="complete" />
-                        <BenefitBase icon={<User width={32} height={32} />} title="Acessibilidade Garantida" description="Interface simples, intuitiva e inclusiva. Qualquer pessoa consegue usar com facilidade." model="complete" />
-                        <BenefitBase icon={<Battery width={32} height={32} />} title="Bateria Inteligente" description="Gerencie o uso da bateria nos momentos certos e garanta energia mesmo quando o clima não ajuda." model="complete" />
-                        <BenefitBase title="E muito mais..." model="simple" />
-                    </div>
-                </div>
-                <div className="w-full flex flex-col items-start gap-1.5 pt-1.5 pb-2.5">
-                    <div className="flex flex-col gap-2.5">
-                        <p className="text-justify text-coal/90 font-Poppins text-sm sm:text-lg">
-                            Esse aplicativo é apenas uma parte de algo maior: um sistema completo de
-                            controle e aproveitamento de energia sustentável, pensado para tornar o consumo
-                            mais consciente, acessível e moderno.
+                </article>
+            </div>
+            <div className="hidden sm:flex w-full justify-between items-center gap-10 px-5 py-10 bg-gradient-to-r from-white via-white/90 to-blue-50 rounded-2xl shadow-md">
+                <div className="flex flex-col w-[45%] text-start">
+                    <header className="flex w-full text-start flex-col gap-2.5">
+                        <h1 className="text-4xl font-Poppins text-abyssal-tide font-semibold leading-tight">
+                            O que é o Geesh?
+                        </h1>
+                        <h2 className="text-xl text-ocean-sky font-medium">
+                            Aplicativo para gestão de energia renovável
+                        </h2>
+                    </header>
+
+                    <article className="flex flex-col gap-4 text-lg font-Poppins text-graphite-shadow/80 mt-4">
+                        <p className="bg-white/60 p-4 rounded-lg shadow-sm leading-relaxed">
+                            O Geesh é um aplicativo desenvolvido por alunos do 3º ano de
+                            Mecatrônica do{" "}
+                            <a
+                                target="_blank"
+                                href="https://www.google.com/search?q=Centro+Territorial+de+Educa%C3%A7%C3%A3o+Profissional+da+Regi%C3%A3o+Metropolitana&sxsrf=AE3TifO9CVX7sT9E815UxVXPG7UQl5xqpw%3A1756703815836"
+                                className="underline font-semibold text-ocean-sky hover:text-abyssal-tide transition-colors"
+                            >
+                                CETEP RM
+                            </a>
+                            , com a missão de tornar o gerenciamento de energia renovável simples,
+                            acessível e eficiente.
                         </p>
-                    </div>
+                        <p className="bg-white/60 p-4 rounded-lg shadow-sm leading-relaxed">
+                            Nosso sistema integra diferentes soluções, como{" "}
+                            <span className="font-semibold text-abyssal-tide">energia solar</span> e{" "}
+                            <span className="font-semibold text-abyssal-tide">eólica</span>,
+                            conectadas a dispositivos inteligentes para oferecer monitoramento em
+                            tempo real, uso otimizado e máxima confiabilidade.
+                        </p>
+                    </article>
+                </div>
+
+                <div className="flex w-[45%] justify-center">
+                    <img
+                        src="/GeeshWebsite/Energy.svg"
+                        alt="Energia Renovável"
+                        className="max-w-md w-full"
+                    />
                 </div>
             </div>
-        </div>
+
+        </section >
     )
 }

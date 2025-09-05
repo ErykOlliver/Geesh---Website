@@ -1,5 +1,5 @@
 export default function Accounts() {
   return (
-    <div>Accounts</div>
+    <div className="text-4xl text-white">Accounts</div>
   )
 }

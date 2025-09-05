@@ -6,6 +6,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme {
@@ -58,11 +62,44 @@
   --color-abyssal-emerald: #002D1B;
   /* verde vibrante, ritual da floresta */
   --color-verdant-rite: #388E3C;
+  /* mar profundo, segredo oceânico */
+  --color-abyssal-tide: #365D6C;
   /* Animations */
   --animate-popupin: popup 0.3s ease-in;
+  --animate-visibleDesc: visibleDesc 1.5s ease-out forwards;
+  --animate-riseUp: riseUp 1.5s ease-out forwards;
+  --animate-levitation: levitation 7s ease-in-out infinite;
 }
 
+
+
 @keyframes popup {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+@keyframes levitation {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(50px);
+  }
+  100%{
+    transform: translateY(0);
+
+  }
+}
+
+@keyframes visibleDesc {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -71,6 +108,18 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes riseUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -193,6 +242,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

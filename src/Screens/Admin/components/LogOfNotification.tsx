@@ -1,4 +1,4 @@
-import { Clock, CornerDownLeft, ShieldCheck } from "lucide-react"
+import { Clock } from "lucide-react"
 
 type LogProps = {
     log_desc: string

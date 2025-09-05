@@ -1,7 +1,8 @@
 import './App.css'
 import AboutApp from './Screens/AboutApp'
-
+import Advantages from './Screens/Advantages'
 import DownloadApp from "./Screens/DownloadApp"
+import { DownloadAppNow } from './Screens/DownloadAppNow'
 import Footer from './Screens/Footer'
 import TeamGeesh from './Screens/TeamGeesh'
 
@@ -9,13 +10,12 @@ import TeamGeesh from './Screens/TeamGeesh'
 function App() {
   document.title = 'Geesh'
   return (
-    <div className='w-screen h-fit flex flex-col items-center gap-6 justify-center pt-10 sm:pt-20 bg-gradient-to-b from-azure to-bluishWhite'>
+    <div className='w-screen h-fit flex flex-col items-center justify-center '>
       <DownloadApp />
       <AboutApp />
-      <div className='py-5 text-5xl font-bold uppercase text-White-80'>
-        <h1>Mais que um aplicativo. uma ideia em movimento.</h1>
-      </div>
+      <Advantages />
       <TeamGeesh />
+      <DownloadAppNow />
       <Footer />
     </div>
   )

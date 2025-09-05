@@ -1,27 +1,21 @@
-import { User } from "lucide-react"
 
 type MemberProps = {
-    img?: React.ReactNode,
+    img?: String,
     name: string,
     skills: string,
+    description: String
 
 }
-
 
 export default function MemberBase(props: MemberProps) {
 
     return (
-        <li className="w-full flex items-center gap-2.5">
-            <div className=" flex items-center justify-center w-20 h-16 sm:w-20 sm:h-16 rounded-full">
-                {props.img ?
-                    <img src={props.img.toLocaleString()} alt="foto do usuário" className="w-full h-full rounded-full" />
-                    :
-                    <div className="w-full h-full rounded-full flex items-center justify-center bg-gray"><User width={32} height={32}  strokeWidth={1}/></div>}
+        <div className="group sm:h-140 hover:shadow-bluishWhite transition-all duration-200 bg-cover bg-center shadow-md  h-90 w-full rounded-4xl border-4 border-white text-center font-Poppins" style={{ backgroundImage: `url(${props.img})` }}>
+            <div className=" w-full h-full bg-gradient-to-t py-3.5 px-2.5 from-black to-transparent rounded-4xl flex flex-col justify-end items-center">
+                <h1 className="font-medium text-White-80 text-4xl group-hover:animate-riseUp">{props.name}</h1>
+                <h3 className="text-White-80/80 text-base  animate-pulse group-hover:animate-riseUp">{props.skills}</h3>
+                <span className="sm:hidden group-hover:flex group-hover:animate-visibleDesc transition-all text-White-80/50 text-sm ">{props.description}</span>
             </div>
-            <div className=" flex flex-col text-start w-full h-full text-lg gap-0">
-                <h1 className="font-bold font-Inria">{props.name}</h1>
-                <p className="font-Inria font-light text-base">{props.skills}</p>
-            </div>
-        </li >
+        </div >
     )
 }

@@ -29,11 +29,15 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Dashboard />
+        element: <Dashboard />,
+        handle: {
+          title: "Dashboard"
+        }
       },
       {
         path: "Users",
-        element: <Accounts />
+        element: <Accounts />,
+        handle: { title: "Usuários" }
       }
     ]
   },

@@ -1,27 +1,20 @@
 import MemberBase from "../components/MemberBase";
 
+
 export default function TeamGeesh() {
     return (
-        <div className="w-screen flex bg-White-80 shadow-xl items-center justify-center">
-            <div className="w-[90%] flex flex-col gap-6 pt-2.5">
-                <h1 className="text-3xl sm:text-4xl text-start font-bold font-Inter uppercase">Equipe de desenvolvimento</h1>
-                <ul className="w-full flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-5 pt-1.5 pb-2.5">
-                    <MemberBase name="Erick Oliveira" skills='Lider, Programador & Design UI/UX' img="/GeeshWebsite/Erick.jpg" />
-                    <MemberBase name="Gustavo Almeida" skills='Social Media & Tester' img="/GeeshWebsite/Gustavo.jpg" />
-                    <MemberBase name="Matheus Gabriel" skills='Programador' />
-                    <MemberBase name="Micael Pereira" skills='Tester' img="/GeeshWebsite/Micael.jpg" />
-                    <MemberBase name="Guilherme Araujo" skills='Tester' img="/GeeshWebsite/Guilherme.jpg" />
-                </ul>
-                <div className="w-full flex items-start gap-1.5 pt-1.5 pb-2.5">
-                    <div className="w-full h-fit flex gap-2.5">
-                        <div className="bg-gradient-to-b from-azure to-bluishWhite w-5 sm:w-1 rounded-r-2xl"></div>
-                        <p className="text-justify text-coal/90 font-Poppins text-sm sm:text-lg">
-                            Unimos tecnologia, dedicação e propósito para criar algo que realmente
-                            faça a diferença. Geesh é a ponte entre inovação e sustentabilidade.
-                        </p>
-                    </div>
-                </div>
+        <section id="aboutApp" className=" w-full flex flex-col gap-2.5 px-5 bg-White-80 items-start justify-start py-14">
+            <header className="flex w-full text-start flex-col gap-2.5">
+                <h1 className="sm:text-5xl text-4xl font-Poppins text-abyssal-tide font-medium">Quem são os desenvolvedores?</h1>
+                <span className="sm:text-2xl text-base text-black/70 font-Poppins">A equipe Geesh conta com 5 membros, sendo eles:</span>
+            </header>
+            <div className=" sm:flex-row flex justify-center items-center w-full h-fit flex-col gap-4 font-Poppins text-graphite-shadow/70">
+                <MemberBase name="Erick Oliveira" description="Responsável por liderar o desenvolvimento do projeto, definindo padrões técnicos, revisando código e programando. Também atua no design de interface e experiência do usuário." skills="Tech Lead & Design UI/UX" img="/GeeshWebsite/Erick.jpg" />
+                <MemberBase name="Gustavo Almeida" description="Contribui trazendo referências visuais para o aplicativo. Como Social Media, administra as redes oficiais da equipe, produzindo conteúdos para o YouTube e Instagram." skills="Social Media & Design Criativo" img="/GeeshWebsite/Gustavo.jpg" />
+                <MemberBase name="Matheus Gabriel" description="Responsável por implementar telas e funcionalidades do aplicativo, seguindo os padrões técnicos definidos pelo Tech Lead." skills="Desenvolvedor de Software" />
+                <MemberBase name="Micael Pereira" description="Responsável por analisar projetos similares e elaborar relatórios semanais, trazendo referências que auxiliam na evolução do aplicativo." skills="Pesquisador de Referências" img="/GeeshWebsite/Micael.jpg" />
+                <MemberBase name="Guilherme Araujo" description="Registra o progresso da equipe em relatórios semanais, organizando dados de entrevistas com os membros e garantindo a atualização do diário de bordo." skills="Analista de Relatórios" img="/GeeshWebsite/Guilherme.jpg" />
             </div>
-        </div>
+        </section>
     )
 }
