@@ -10,7 +10,7 @@ import TeamGeesh from './Screens/TeamGeesh'
 function App() {
   document.title = 'Geesh'
   return (
-    <div className='w-screen h-fit flex flex-col items-center justify-center '>
+    <div className='w-screen h-fit flex flex-col gap-2.5 bg-White-80 items-center justify-center '>
       <DownloadApp />
       <AboutApp />
       <Advantages />

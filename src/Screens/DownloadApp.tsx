@@ -16,7 +16,7 @@ export default function DownloadApp() {
                     <a aria-label='aria-label="Download do Geesh.apk"' href="/GeeshWebsite/Geesh.apk" download="Geesh.apk" className='sm:text-lg hover:bg-bluishWhite hover:text-White-80 shadow-md transition-colors font-Poppins flex w-full h-fit py-2.5 justify-center items-center bg-White-80 text-bluishWhite rounded-full gap-1'> <Download /> Fazer Download</a>
                     <a aria-label='aria-label="Saiba mais"' href="#aboutApp" className='sm:text-lg hover:bg-White-80 hover:text-bluishWhite transition-colors flex h-fit shadow-md font-Poppins py-2.5 w-[55%] justify-center items-center border-2 border-White-80 text-White-80 rounded-full gap-1'> Saiba mais</a>
                 </div>
-                <span className='sm:text-lg flex font-Poppins text-White-80/90'><BadgeAlert /> Versão Beta 1.0.0</span>
+                <span className='sm:text-lg flex font-Poppins text-White-80/90'><BadgeAlert /> Versão Beta 1.0.1</span>
             </div>
             <div className='hidden sm:flex'>
                 <img src="/GeeshWebsite/phone1.png" alt="Geesh Logo" className='w-100 ' />

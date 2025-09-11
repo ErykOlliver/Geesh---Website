@@ -4,7 +4,6 @@ import './index.css'
 import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import AdminSignIn from './Screens/Admin/AdminSignIn.tsx'
-import PageNotFound from './Screens/others/page-not-found.tsx'
 import Admin from './Screens/Admin/Admin.tsx'
 import ProtectRouter from './Screens/Admin/components/ProtectRouter.tsx'
 import { Dashboard } from './Screens/Admin/views/Dashboard.tsx'
@@ -40,10 +39,6 @@ const router = createBrowserRouter([
         handle: { title: "Usuários" }
       }
     ]
-  },
-  {
-    path: '*',
-    element: <PageNotFound />
   },
 
 ])

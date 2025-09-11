@@ -6,8 +6,8 @@ import { Notifications } from "../components/Notifications"
 export const Dashboard = () => {
   return (
     <div className=" text-white w-full h-full flex justify-center items-start">
-      <div className=" w-[90%] flex flex-col gap-3.5">
-        <div className="w-full h-fit flex gap-2.5 flex-wrap justify-center">
+      <div className=" w-[95%] flex flex-col h-full gap-3.5">
+        <div className="w-full flex gap-2.5 justify-between">
           <GeneralUserStatistic icon={<Users />} title="Total de usuários" value={200} />
           <GeneralUserStatistic icon={<UserCheck />} title="Ativos" value={120} />
           <GeneralUserStatistic icon={<UserX />} title="Inativos" value={80} />

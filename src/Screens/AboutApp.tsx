@@ -20,10 +20,10 @@ export default function AboutApp() {
             <div className="hidden sm:flex w-full justify-between items-center gap-10 px-5 py-10 bg-gradient-to-r from-white via-white/90 to-blue-50 rounded-2xl shadow-md">
                 <div className="flex flex-col w-[45%] text-start">
                     <header className="flex w-full text-start flex-col gap-2.5">
-                        <h1 className="text-4xl font-Poppins text-abyssal-tide font-semibold leading-tight">
+                        <h1 className="text-4xl font-Poppins  font-semibold leading-tight">
                             O que é o Geesh?
                         </h1>
-                        <h2 className="text-xl text-ocean-sky font-medium">
+                        <h2 className="text-xl text-ocean-sky text-abyssal-tide font-medium">
                             Aplicativo para gestão de energia renovável
                         </h2>
                     </header>
@@ -52,7 +52,7 @@ export default function AboutApp() {
                     </article>
                 </div>
 
-                <div className="flex w-[45%] justify-center">
+                <div className="flex w-[25%] justify-center">
                     <img
                         src="/GeeshWebsite/Energy.svg"
                         alt="Energia Renovável"
